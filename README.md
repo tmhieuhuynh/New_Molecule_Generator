@@ -43,7 +43,7 @@ python Molecule_To_Moiety.py SMI_Samples.smi Test.csv
 ```
 ### New_Molecule_Generator
 Before executing this program, the user needs to manually convert the moiety result into a text file as Moiety_Samples.txt, which includes the information on moieties, occurrence quantity, and binding points.
-The program takes the text file of moiety information as the input and generates new molecules.
+The program takes the text file of moiety information as the input and generates new molecules. The new molecules are checked with Pubchem through pubchmey to ensure the chemical feasibility.
 ```bash
 python New_Molecule_Generator.py ["number of looping times"] ["maximum molecular weight"] ["directory of the moiety information file"] ["directory for the SMI result files"]
 ```
